@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#keret {
+    margin: auto; 
+    max-width: 980px; 
+    width: 100%;
+    background-color: #608de2;
+    padding: 12px; 
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 0px;
+    border-bottom: 2px solid white;
+    line-height: 20px;
+}
+
+header h2{
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+
+#tartalom {
+    display: flex;
+    gap: 20px; 
+}
+
+#kedvencek { 
+    flex-grow: 1; 
+}
+
+#jobb-menu { 
+    width: 260px; 
+    flex-shrink: 0;
+}
+
+
+
+article {
+    border: 1px dashed gray; 
+    background-color: whitesmoke;
+    padding: 10px; 
+    margin-bottom: 12px;
+}
+
+
+#jobb-menu > div { 
+    margin-bottom: 12px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+
+
+
+.lista{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.lista li{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0;
+    background-color: rgb(217, 217, 217);
+}
+
+
+img {
+    max-width: 440px; 
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+
+table {
+    width: 100%; 
+    border: 1px solid black;
+}
+th, td {
+    padding: 6px; 
+    text-align: left;
+    border: 1px solid black;
+}
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+#kereses-modul form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start; 
+}
+
+
+#kereses-modul input[type="text"] {
+    flex-grow: 1;
+    width: 100%;
+    padding: 6px; 
+    margin-bottom: 0;
+}
+
+
+#kereses-modul input[type="submit"] {
+
+    flex-shrink: 0; 
+    padding: 6px 10px;
+    width: auto;
+}
+
+#szuro-modul h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#szuro-modul form {
+    display: block;
+}
+
+fieldset {
+    border: none; 
+    padding: 0;
+    margin: 0 0 12px 0;
+    border: 1px solid gray;
+    padding: 0.9em;
+    background-color: whitesmoke; 
+}
+
+legend {
+    padding: 0 5px; 
+    font-weight: bold;
+}
+
+
+
+
+
+
+#szuro-modul input[type="number"] {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 4px;
+    text-align: left;
+}
+
+
+
+
+#szuro-modul form > div:last-child {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#szuro-modul form > div:last-child input {
+    flex: 1;
+}
+
+#szuro-modul input[type="submit"],
+#szuro-modul input[type="reset"] {
+    padding: 8px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-weight: bold;
+}

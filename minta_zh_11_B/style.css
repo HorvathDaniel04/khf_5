@@ -1,0 +1,38 @@
+table{
+    border: solid;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+th{
+    border-color: black;
+    border: solid;
+    padding: 5px;
+}
+
+td{
+    border-color: black;
+    border: solid;
+    padding: 5px;
+}
+
+[class="varos"]{
+    background-color: rgb(116, 255, 116);
+}
+
+form{
+    margin-top: 0px;
+}
+
+section{
+    display: flex;
+}
+
+aside{
+    display: block;
+    margin-left: 10px;
+}
+
+aside h2{
+    margin-top: 0px;
+}

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Informatika 2 Kis HF 03 - Kisállatbolt</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="keret">
+
+			<header id="fejlec">
+				<h1>Kisállatbolt</h1>
+				<h2>Kedvencek és örökbefogadási lehetőségek</h2>
+			</header>
+
+			<div id="tartalom">
+
+				<main id="kedvencek">
+					<article>
+						<h1>Franko</h1>
+						<p>Egy nagyon aranyos és ügyes kutya ez a Frankó. Ha kell a gyerekeket is elviszi oviba.</p>
+						<img src="kutya.jpg" title="kutya" alt="Egy kutya vezeti az autót"/>
+						<ul class="lista">
+							<li>Faj: kutya</li>
+							<li>Életkor: 3 év</li>
+							<li>Ár: 500 000 Ft</li>
+						</ul>
+						<table>
+							<tr>
+								<th>Vizsgálat</th>
+								<th>Eredmény</th>
+							</tr>
+							<tr>
+								<th>Oltások</th>
+								<td>Igen</td>								
+							</tr>
+							<tr>
+								<th>Chipezve</th>
+								<td>Igen</td>
+							</tr>
+							<tr>
+								<th>Jogosítvány</th>
+								<td>Igen</td>
+							</tr>
+						</table>
+					</article>
+
+					<article>
+						<h1>Co Lee</h1>
+						<p>Ilyen szamár: Hell Yeah</p>
+						<img src="szamar.jpg" title="szamar" alt="Egy szamár, aki kinyújtja a nyelvét"/>
+						<ul class="lista">
+							<li>Faj: szamár</li>
+							<li>Életkor: 4 év</li>
+							<li>Ár: 5 000 Ft</li>
+						</ul>
+					</article>
+
+				</main>
+			
+				<aside id="jobb-menu">
+						<div id="kereses-modul">
+							<h2>Keresés</h2>
+							
+							<form>
+								
+								<label for="kereses-input" class="visually-hidden">Kereses: Fajl, nev stb...</label>
+								
+								<input type="text" id="kereses-input" name="kereses_szoveg" placeholder="Keresés: Faj, név...">
+								
+								<input type="submit" value="Keresés">
+								
+							</form>
+						</div>
+						<div id="szuro-modul">
+							<h2>Szűrés</h2>
+							
+							<form>
+								
+								<fieldset>
+									<legend>Faj</legend>
+									
+									<input type="checkbox" id="faj_kutya" name="faj" value="kutya">
+									<label for="faj_kutya">kutya</label><br>
+									
+									<input type="checkbox" id="faj_macska" name="faj" value="macska">
+									<label for="faj_macska">macska</label><br>
+									
+									<input type="checkbox" id="faj_kisallat" name="faj" value="kisallat">
+									<label for="faj_kisallat">kisállat</label>
+								</fieldset>
+								
+								<fieldset>
+									<legend>Életkor (évek)</legend>
+									
+									<label for="min_eletkor">Minimum:</label>
+									<input type="number" id="min_eletkor" name="min_eletkor" value="0" min="0" max="30" step="1"><br>
+									
+									<label for="max_eletkor">Maximum:</label>
+									<input type="number" id="max_eletkor" name="max_eletkor" value="30" min="0" max="30" step="1">
+								</fieldset>
+								
+								<fieldset>
+									<legend>Ár (Ft)</legend>
+									
+									<label for="min_ar">Minimum:</label>
+									<input type="number" id="min_ar" name="min_ar" value="0" min="0" max="50000" step="1000"><br>
+									
+									<label for="max_ar">Maximum:</label>
+									<input type="number" id="max_ar" name="max_ar" value="50000" min="0" max="50000" step="1000">
+								</fieldset>
+								
+								<div>
+									<input type="submit" value="Alkalmaz">
+									<input type="reset" value="Töröl"> 
+								</div>
+								
+							</form>
+						</div>
+						<div>
+							<h2>Kapcsolat</h2>
+							<p>Nyitvatartas: H-P 9:00-17:00</p>
+							<p>E-mail: info@info.example</p>
+						</div>
+				</aside>
+			</div>
+
+			<footer id="labjegyzek">
+				<p> Informatika 2 Kis HF 03 - Kisállatbolt</p>
+			</footer>
+
+		</div>
+	</body>
+</html>

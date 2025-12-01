@@ -1,0 +1,15 @@
+[class="filmek"]{
+    background-color: yellow;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+[class="filmek"] h2{
+    margin: 0px;
+}
